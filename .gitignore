@@ -93,3 +93,6 @@ audit-images.unused.txt
 # File for extension Claude Code
 skill-nudge-state
 .claude-md-backup/
+
+# Spck CLI project data
+.spck-editor/

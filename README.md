@@ -4,8 +4,8 @@
 
 # HatMP
 
-HatMP is an adult video game featuring a gender-swapping protagonist. This game is available for Windows (.exe) and Android
-(.apk); its website [hatmp.com](https://hatmp.com) only offers the downloads.
+HatMP is an adult video game featuring a gender-swapping protagonist. This game is available for Windows (.exe) and
+Android (.apk); its website [hatmp.com](https://hatmp.com) only offers the downloads.
 
 ## :warning: :warning: Adult only :warning: :warning:
 
@@ -54,10 +54,11 @@ pnpm run test:e2e:open       # interactive runner
 
 The project uses [Sentry](https://sentry.io) to get readable stack traces in production.
 
-- **Dependencies**: `@sentry/browser` and `tauri-plugin-sentry-api` (runtime); `@sentry/vite-plugin` and `@sentry/cli` (build).
+- **Dependencies**: `@sentry/browser` and `tauri-plugin-sentry-api` (runtime); `@sentry/vite-plugin` and
+  `@sentry/cli` (build).
 - **Source maps**: production builds (`NODE_ENV=production`) generate `hidden` source maps (`build.sourcemap` in
-  `vite.config.ts`). The `sentryVitePlugin` uploads them to Sentry during `pnpm run build`, so minified frames are mapped
-  back to the original source. The plugin is disabled in development.
+  `vite.config.ts`). The `sentryVitePlugin` uploads them to Sentry during `pnpm run build`, so minified frames are
+  mapped back to the original source. The plugin is disabled in development.
 - **Authentication**: the upload needs a Sentry auth token. Create one in Sentry (*Settings → Developer Settings → Auth
   Tokens*) and provide it **without committing it**, either through the `SENTRY_AUTH_TOKEN` environment variable or a
   local `.env.sentry-build-plugin` file (already ignored by git):
@@ -80,7 +81,8 @@ pnpm exec wrangler dev      # local preview (http://localhost:8787)
 pnpm exec wrangler deploy   # publish to Cloudflare
 ```
 
-The download buttons use GitHub's "latest release" links, so every release must attach its files under these exact names:
+The download buttons use GitHub's "latest release" links, so every release must attach its files under these exact
+names:
 
 | Platform | File |
 | --- | --- |
@@ -93,7 +95,8 @@ The game assets (`resources/`) are **not stored in git**; they are hosted on Clo
 
 ## Translation
 
-There may be some translation errors, so please feel free to let me know by opening an issue. In addition to English, I provide French, German, Italian, Portuguese and Spanish.
+There may be some translation errors, so please feel free to let me know by opening an issue. In addition to English, I
+provide French, German, Italian, Portuguese and Spanish.
 
 ## Contributing
 
