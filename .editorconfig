@@ -1,0 +1,30 @@
+# EditorConfig is awesome: https://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file and default charset
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+trim_trailing_whitespace = true
+
+# indent size for web, config and data file
+[*.{json,jsonc,json5,toml,yaml,yml,html,css,scss,js,mjs,cjs,jsx,ts,mts,cts,tsx}]
+indent_size = 2
+
+# Rust (Tauri backend) - aligned with rustfmt default
+[*.rs]
+indent_size = 4
+max_line_length = 100
+
+# Shell scripts (Linux) - must stay LF
+[*.sh]
+end_of_line = lf
+indent_size = 2
+
+# Trailing whitespace is meaningful in markdown
+[*.md]
+trim_trailing_whitespace = false

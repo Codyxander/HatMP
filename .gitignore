@@ -1,0 +1,95 @@
+# Logs
+pnpm-debug.log*
+
+# Dependencies
+node_modules
+
+# pnpm cache (CI, when the store is configured inside the project)
+.pnpm-store/
+
+# dotenv environment variables files
+.env.*
+.env
+!.env.example
+
+# VS Code settings
+.vscode/
+
+# Sonarlint settings
+.sonarlint/
+
+# SonarScanner CLI working directory
+.scannerwork/
+
+# Claude settings
+.claude/settings.local.json
+
+# Claude Code git worktrees (local checkouts, not part of the tracked codebase)
+.claude/worktrees/
+
+# MCP server config
+.mcp.json
+
+# Game assets (stored in Cloudflare R2, not in git)
+resources/
+
+# Local assets version marker
+.resources-version
+
+# Temp output of the asset packaging scripts
+.package-assets-tmp/
+
+# Coverage
+coverage/
+*.lcov
+.vitest-coverage/
+
+# Vite build output
+dist/
+
+# bundle-optimizer report (pnpm run build:analyze)
+stats.html
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Tauri
+src-tauri/target/
+
+# Sentry Config File
+.env.sentry-build-plugin
+
+# Android signing (never commit the keystore! or its credentials)
+src-tauri/keystore.properties
+
+# Personal guide to .claude agents/skills (not shared with the team)
+GUIDE-CLAUDE.md
+
+# Android build output and signing
+src-tauri/gen/android/.gradle/
+src-tauri/gen/android/build/
+src-tauri/gen/android/app/build/
+src-tauri/gen/android/local.properties
+*.jks
+*.keystore
+
+# Untouched originals of legacy files kept as migration reference (legacy-to-esm skill)
+.legacy-reference/
+
+# Runtime resource audit (generated while the game runs in dev, see src/js/auditImages.js)
+audit-images.json
+audit-images.md
+audit-images.unused.txt
+
+# Wrangler local state (wrangler dev)
+.wrangler/
+
+# File for extension Claude Code
+skill-nudge-state
+.claude-md-backup/
